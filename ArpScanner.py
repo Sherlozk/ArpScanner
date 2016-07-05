@@ -5,29 +5,6 @@ import sys, getopt, os
 import socket
 import uuid
 
-#define ARP Packet
-'''
-class Ethernet_head:
-    def __init__(self,**data):
-        #self.__dict__.update(data)
-        dst = "ff:ff:ff:ff:ff:ff"
-        src = "00:00:00:00:00:00"
-        type = 0x9000
-
-class ARP_head:
-    def __init__(self,**data):
-        hwtype= 0x1
-        ptype= 0x800
-        hwlen= 6
-        plen= 4
-        op= 1
-        hwsrc= "00:9a:aa:9a:9f:1a"
-        psrc= "10.99.100.172"
-        hwdst= "00:00:00:00:00:00"
-        pdst= "0.0.0.0"
-
-'''
-
 
 def get_mac_address(): #get mac 
     mac=uuid.UUID(int = uuid.getnode()).hex[-12:] 
